@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.first-image {
+  background-image: url("./assets/pedro-lastra-Nyvq2juw4_o-unsplash.jpg");
+  min-height: 100vh;
+  /* position: absolute; */
+  text-align: center;
+  top: 50%;
+}
+
+.second-image {
+  background-image: url("./assets/henning-witzel-ukvgqriuOgo-unsplash.jpg");
+  min-height: 1000px;
+}
+
+.third-image {
+  background-image: url("./assets/andre-benz-qi2hmCwlhcE-unsplash.jpg");
+  min-height: 1000px;
+}
+
+.fourth-image {
+  background-image: url("./assets/jesse-echevarria--4MIfAsQsS8-unsplash.jpg");
+  min-height: 100vh;
+  text-align: center;
+}
+
+.first-image,
+.second-image,
+.third-image,
+.fourth-image {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+section {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  padding: 3rem 5rem;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+h3{
+    /* margin: 0; */
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 30px;
+    background: linear-gradient(#1c7eae, #23384e);
+    display: inline-block;
+    border: 2px solid rgb(205, 195, 195);
+    border-radius: 20px;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 500px;
+}
+
+/* h3:hover{
+    transform: translate(100px, 100px);
+} */
+
+.section-light{
+    background: linear-gradient(#80c7eb, #7cc2d0)
+}

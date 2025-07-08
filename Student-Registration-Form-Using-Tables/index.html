@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2 style="text-align: center; background-color: burlywood;">Student Registration Form</h2>
+    <table align="center" cellpadding="10">
+        <tr>
+            <td><label for="fName">FirstName: </label></td>
+            <td><input type="text" placeholder="Enter your name" id="fName"></td>
+            <td><p>(max 40 characters (a-z) (A-Z))</p></td>
+        </tr>
+        <tr>
+            <td><label for="lName">LastName</label></td>
+            <td><input type="text" placeholder="Enter your last name" id="lName"></td>
+            <td><p>(max 40 characters (a-z) (A-Z))</p></td>
+        </tr>
+            <td><label for="DOB">Date Of Birth</label></td>
+            <td><input type="date" name="DOB" id="DOB"></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" id="email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td><label for="mob">Mobile Number:</label></td>
+            <td><input type="number" name="mob" id="mob"></td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Gender:</label>
+                Male<input type="radio" name="gender" value="Male">
+                Female <input type="radio" name="gender" value="Female">
+                Transgender <input type="radio" name="gender" value="Transgender">
+            </td>
+        </tr>
+        <tr> 
+            <td><label for="address">Address</label></td>
+            <td><textarea name="address" id="address" cols="30" rows="10"></textarea></td>
+            <td>
+                <label for="pincode">Pincode:</label>
+                <input type="number" name="pincode" id="pincode" maxlength="6">
+            </td>
+        </tr>
+        <tr>
+            <td><label for="coutry">Country</label></td>
+            <td><input type="text" name="coutry" id="coutry" value="India" placeholder="Country"></td>
+        </tr>
+        <tr>
+            <td><label for="Qualification" id="Qualification">Qualification</label></td>
+            <td align="center">
+                <table cellpadding="8">
+                    <thead>
+                        <tr>
+                            <th colspan="5">Add Your Qualification Information...</th>
+                        </tr>
+                        <tr>
+                            <th align="center">S.No.</th>
+                            <th align="center">Class</th>
+                            <th align="center">Board/University</th>
+                            <th align="center">Precentage</th>
+                            <th align="center">Year of Passing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>X</td>
+                            <td><input type="text" name="board/University" id="Qualification"></td>
+                            <td><input type="number" name="Precentage" id=""></td>
+                            <td><input type="number" name="year" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>XII</td>
+                            <td><input type="text" name="board/University" id=""></td>
+                            <td><input type="number" name="Precentage" id=""></td>
+                            <td><input type="number" name="year" id=""></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Graduation</td>
+                            <td><input type="text" name="board/University" id=""></td>
+                            <td><input type="number" name="Precentage" id=""></td>
+                            <td><input type="number" name="year" id=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+            <td><input type="reset" value="Reset The Form"></td>
+        </tr>
+    </table>
+</body>
+</html>
