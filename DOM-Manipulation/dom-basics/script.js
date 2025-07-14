@@ -62,3 +62,33 @@ newElement2.style.border = "2px solid green";
 newElement2.style.width = "250px";
 
 document.body.appendChild(newElement2);
+
+const newElement3 = document.createElement("input");
+newElement3.setAttribute("placeholder", "Enter Your Name...");
+// newElement3.style.border = "none";
+newElement3.style.width = "200px";
+document.body.appendChild(newElement3);
+
+const para = document.querySelector(".para");
+console.log(para);
+console.dir(para);
+
+const list = document.querySelector("ol>li:first-child");
+console.log(list);
+
+const imagesURL = [
+  "https://plus.unsplash.com/premium_photo-1661962685099-c6a685e6c61d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1533422902779-aff35862e462?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1587387119725-9d6bac0f22fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8aG9yaXpvbnRhbHxlbnwwfHwwfHx8MA%3D%3D",
+];
+
+const allTheImages = document.querySelectorAll("img");
+console.log(allTheImages);
+
+const traverseAllTheImages = () => {
+  for (let i = 0; i < allTheImages.length; i++) {
+    const URL = imagesURL[i];
+    // allTheImages.src = `{imagesURL[i]}`;
+    allTheImages[i].src = URL;
+  }
+};
