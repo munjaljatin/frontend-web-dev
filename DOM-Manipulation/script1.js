@@ -46,12 +46,21 @@ btn.addEventListener("click", () => {
   document.body.style.color = "#fff";
 });
 
+btn.style.border = "none";
+btn.style.height = "40px";
+
 btn.style.padding = "10px";
 btn.style.borderRadius = "25px";
-btn.style.border = "1px solid grey";
+// btn.style.border = "1px solid grey";
 btn.style.backgroundColor = "lightgreen";
+btn.style.boxShadow = "1px 10px 10px rgba(0,0,0,0.7)";
 
 const btn2 = document.getElementById("btn2");
-btn2.addEventListener("click", function () {
-  alert("You are hacked");
+// btn2.addEventListener("click", function () {
+//   alert("You are hacked");
+// });
+
+btn2.addEventListener("click", () => {
+  const isconfirmed = confirm("Are you sure you want to leave this page.");
+  console.log(isconfirmed);
 });
