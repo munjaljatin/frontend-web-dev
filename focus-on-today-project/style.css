@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+}
+
+/* Main Container */
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  height: 1024px;
+  background-color: #48a30012;
+  position: relative;
+}
+
+/* Heading Element */
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+.focus {
+  color: #48a300;
+}
+.today {
+  color: #61481c;
+}
+
+/* Insider Container */
+.inside-container {
+  width: 660px;
+  height: 810px;
+  background-color: #fbfbfb;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  margin: 45px;
+  border-radius: 15px;
+  padding: 16px 8px;
+  /* position: absolute; */
+}
+
+.inside-container .heading3 {
+  padding: 16px 8px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.inside-container span {
+  color: #858585;
+  font-size: 14px;
+  padding: 16px 8px;
+}
+
+.inside-container .bar {
+  height: 30px;
+  border-radius: 15px;
+  background-color: #48a300;
+  padding: 16px 8px;
+  margin: 15px;
+  opacity: 10%;
+}
+
+.inside-container .goals {
+  /* background-color: red; */
+  color: red;
+}
+
+/* checkbox */
+.checkboxes {
+  /* width: 570px; */
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 30px;
+}
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 0 20px;
+  border-radius: 25px;
+}
+
+.checkbox [type="text"] {
+  margin-left: 20px;
+  width: 570px;
+  height: 82px;
+  outline: none;
+  border: none;
+  color: #d9d9d9;
+}
+
+/* Last heading */
+.heading {
+  display: flex;
+  justify-content: center;
+}
+.move {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* last span */
+.end {
+  display: flex;
+  justify-content: center;
+}
+.end span {
+  font-size: 10px;
+  font-weight: 500;
+  color: #858585;
+}
