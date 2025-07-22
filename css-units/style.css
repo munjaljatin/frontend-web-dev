@@ -1,0 +1,27 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  background-color: aliceblue;
+  /* text-align: center; */
+  font-family: sans-serif;
+}
+
+section {
+  width: 90%;
+}
+
+.box {
+  background-color: black;
+  color: white;
+  width: 10%;
+  height: 100px;
+}
+
+p {
+  /* 1 rem => Root em is equal to computed font-size of the root element which is mainly the <html> element */
+  font-size: 1rem;
+}
