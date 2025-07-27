@@ -4,8 +4,98 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms in HTML</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: aliceblue; */
+        font-family: sans-serif;
+      }
+      .form-container {
+        width: 400px;
+        /* background-color: red; */
+        border: 1px solid saddlebrown;
+        padding: 30px;
+        text-align: center;
+        background-image: linear-gradient(#2496d0, #000);
+        border-radius: 25px;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        color: white;
+      }
+
+      .field {
+        width: 250px;
+        height: 28px;
+        outline: none;
+        border: 1px solid black;
+        /* border: none; */
+        border-radius: 14px;
+        color: black;
+        font-size: 16px;
+        padding: 5px;
+      }
+      button {
+        height: 50px;
+        background-color: white;
+        color: black;
+        font-weight: 700;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 10px -0px 10px 10px rgba(255, 255, 255, 0.1);
+      }
+    </style>
   </head>
   <body style="font-family: sans-serif">
     <h2 style="text-align: center">Forms in HTML</h2>
+    <form action="https://www.youtube.com/results">
+      <input type="text" name="search_query" />
+    </form>
+    <!--  -->
+    <h3>Amazon</h3>
+    <form action="https://www.amazon.in/s">
+      <input type="text" name="k" />
+      <button>search</button>
+    </form>
+    <br />
+    <br />
+    <div class="form-container">
+      <form action="/">
+        <p>
+          <label for="fName">First Name:</label>
+          <input type="text" id="fName" class="field" />
+        </p>
+        <p>
+          <label for="lName">Last Name:</label>
+          <input type="text" id="lName" class="field" />
+        </p>
+        <p>
+          <label for="email">Email:</label>
+          <input type="email" id="email" class="field" />
+        </p>
+        <p>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            minlength="6"
+            maxlength="12"
+            class="field"
+          />
+        </p>
+        <p>
+          <input type="checkbox" id="terms" required />
+          <label for="terms">Agree to Terms & Conditions</label>
+        </p>
+        <button type="reset">Reset The Form</button>
+        <button type="submit">Submit The Form</button>
+      </form>
+    </div>
   </body>
 </html>
