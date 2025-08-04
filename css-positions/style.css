@@ -117,6 +117,7 @@ ul {
 .newlist {
   background-color: bisque;
   position: relative;
+  margin-bottom: 100px;
 }
 
 .python {
@@ -126,20 +127,23 @@ ul {
   top: 1px;
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: aquamarine;
-}
-#links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+.parent {
+  width: 600px;
+  height: 300px;
+  border: 1px solid grey;
+  /* border-radius: 25px; */
+  margin: auto;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  /* padding: 5px; */
 }
 
-#links > li:hover {
-  border-bottom: 1px solid grey;
-  transform: 0.5s;
+.child-1 {
+  position: relative;
+  top: 280px;
+  left: 582px;
+}
+
+.child-2 {
+  position: absolute;
+  top: 0%;
 }
