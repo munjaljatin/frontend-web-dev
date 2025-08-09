@@ -1,0 +1,42 @@
+body {
+  background-color: aliceblue;
+}
+
+.loader {
+  width: 120px;
+  height: 120px;
+  /* border: 10px solid grey; */
+  border: 10px dotted black;
+  border-radius: 50%;
+
+  /* positioning */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  margin: -76px 0 0 -76px;
+  -webkit-animation: 2s spin linear infinite;
+  animation: 3s spin linear infinite;
+}
+
+#content-div {
+  display: none;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

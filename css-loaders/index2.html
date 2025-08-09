@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Loader</title>
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body style="text-align: center" onload="showContent()">
+    <div class="loader"></div>
+    <!-- <button onclick="showContent()">click</button> -->
+    <div id="content-div">
+      <h2>Tada!</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        nulla dignissimos corporis qui, delectus veritatis. Optio cumque, natus
+        a aspernatur obcaecati quibusdam dolore doloribus mollitia dicta quas
+        inventore veniam eveniet.
+      </p>
+    </div>
+    <script>
+      console.log("Loader");
+      var myVar;
+      function showContent() {
+        myVar = setTimeout(display, 3000);
+      }
+      function display() {
+        const loader = document.querySelector(".loader");
+        const contentDiv = document.getElementById("content-div");
+        console.log(loader, contentDiv);
+        loader.style.display = "none";
+        contentDiv.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
