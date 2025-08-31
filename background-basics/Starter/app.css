@@ -1,0 +1,56 @@
+body {
+  background: radial-gradient(pink, #2c4483);
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.image-box {
+  width: 500px;
+  height: 500px;
+  border: 2px solid white;
+  background-image: url("./images/food.jpg");
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.image-box2 {
+  margin-top: 50px;
+  width: 900px;
+  height: 600px;
+  border: 1px solid white;
+  background-image: url("https://images.pexels.com/photos/776538/pexels-photo-776538.jpeg?_gl=1*tg8iwo*_ga*MTQyMjYyNzM1OC4xNzU1MDI2NTgw*_ga_8JE65Q40S6*czE3NTUwMjY1ODAkbzEkZzEkdDE3NTUwMjY3NjkkajMwJGwwJGgw");
+  background-size: cover;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.new-box {
+  background-color: bisque;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  border: 2px solid black;
+  background-image: url("./images/peacock.png");
+}
+
+.box-4 {
+  width: 500px;
+  height: 300px;
+  margin-top: 100px;
+  /* border: 1px solid white; */
+  background-image: url("https://images.pexels.com/photos/3300826/pexels-photo-3300826.jpeg");
+  border-radius: 25px;
+  background-size: cover;
+}
+
+.gradient-box {
+  width: 700px;
+  height: 500px;
+  border: 1px solid white;
+  border-radius: 25px;
+  background-image: linear-gradient(#000046, #1cb5e0);
+}
