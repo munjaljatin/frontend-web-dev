@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+
+/* css variables */
+:root {
+  --blue: #6fbde4;
+  --lg: rgb(45, 175, 149);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: ubuntu;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  background-color: lightcyan;
+}
+
+.list-items {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* h3 styling */
+.navigation h3 {
+  font-family: cursive;
+}
+
+section {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 700px;
+  text-align: center;
+  /* background-color: antiquewhite; */
+}
+.common {
+  /* background-color: red; */
+  padding: 20px;
+  border: 2px solid var(--blue);
+  border-radius: 25px;
+}
+
+.btn {
+  text-align: center;
+}
+
+#color {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: lightgreen;
+  font-weight: 600;
+}
+
+.form-container {
+  padding: 50px;
+  border: 2px solid green;
+  border-radius: 25px;
+  background-color: lightblue;
+}
+
+input {
+  padding: 10px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 25px;
+}
+
+.calculator {
+  background-color: beige;
+}
+
+#list-section h3 {
+  text-align: center;
+}
+
+#list-section {
+  text-align: left;
+}
+
+#color:hover {
+  background-color: var(--lg);
+  transition: 0.3s;
+  color: white;
+}

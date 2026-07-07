@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navigation">
+        <div class="left">
+          <h3>Jatin Munjal</h3>
+        </div>
+        <div class="right">
+          <ul class="list-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- DOM Section -->
+    <section>
+      <div class="dom common">
+        <h2 class="heading2">Dom Manipulation</h2>
+        <!-- <blockquote></blockquote> -->
+        <p class="p1">
+          The Document Oject Model connects web pages to scripting or
+          programming languages by representing the structure of the document
+          such as the HTML representing the web page --- in memory.
+        </p>
+        <p class="p2">
+          The DOM represents a document with a logical tree. Each branch of the
+          tree ends with a node and each node contains objects. DOM method allow
+          programmatic access to the tree. By using them, we can change the
+          document's structure, style or content.
+        </p>
+        <div class="btn">
+          <button id="color" onclick="changeSectionColor()">
+            Change the Color of section
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- another div -->
+    <div class="bg-black">
+      <h2 id="h2-in-div">We are inside a div</h2>
+      <button onclick="changeStyleHeading()">Click</button>
+    </div>
+    <section>
+      <div class="node common">
+        <h2 class="heading2">Node JS</h2>
+        <!-- <blockquote></blockquote> -->
+        <p class="p1">
+          Node (or more formally Node.js) is an open-source, cross-platform
+          runtime environment that allows developers to create all kinds of
+          server-side tools and applications in JavaScript.
+        </p>
+        <p class="p2">
+          The runtime is intended for use outside of a browser context (i.e.
+          running directly on a computer or server OS). As such, the environment
+          omits browser-specific JavaScript APIs and adds support for more
+          traditional OS APIs including HTTP and file system libraries.
+        </p>
+        <div class="btn">
+          <button id="color" onclick="changeSectionColor()">
+            Change the Color of section
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- form section -->
+    <section>
+      <div class="form-container">
+        <form>
+          <label for="email">Enter your email:</label>
+          <input type="email" placeholder="example@gmail.com" id="email" />
+          <br />
+          <br />
+          <label>Enter your number:</label>
+          <input type="number" placeholder="9876543210" />
+          <br />
+          <br />
+          <label>Enter your password</label>
+          <input type="password" />
+          <br />
+          <br />
+          <button id="color">Submit</button>
+          <br />
+          <br />
+          <a href="#" style="color: blue">Forget Your Password</a>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="calculator common">
+        <label for="num1">Enter first Number: </label>
+        <input type="text" id="num1" />
+        <br />
+        <br />
+        <label for="num2">Enter second Number: </label>
+        <input type="text" id="num2" />
+        <br />
+        <br />
+        <button id="color" class="sum" onclick="calculateSum()">
+          Calculate Sum
+        </button>
+        <div id="result"></div>
+      </div>
+    </section>
+    <!-- Script -->
+    <section id="list-section">
+      <div class="common">
+        <ul id="list">
+          <h3>Vegetables</h3>
+          <li>Potatoes</li>
+          <li>Tomatoes</li>
+          <li>Cauliflower</li>
+          <li>Onions</li>
+        </ul>
+        <button id="color" onclick="changeListColor()">Hit Me</button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
